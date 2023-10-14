@@ -1,0 +1,64 @@
+
+<body class="register-page">
+  
+    <main class="registration-page">
+        <div class="registration-form">
+            <h1>Register for Lung Cancer Predictor</h1>
+            <form action="/register" method="POST" onsubmit="return validateForm()">
+                <div class="inputfield">
+                    <label for="name">Name</label>
+                    <input type="text" class="input" name="name" id="name" required>
+                </div>
+                <div class="inputfield">
+                    <label for="age">Age</label>
+                    <input type="text" class="input" name="age" id="age" required>
+                </div>
+                <div class="inputfield">
+                    <label for="username">Username</label>
+                    <input type="username" class="input" name="username" id="username" required>
+                </div>
+                <div class="inputfield">
+                    <label for="email">Email</label>
+                    <input type="email" class="input" name="email" id="email" required>
+                </div>
+                <div class="inputfield">
+                    <label for="password">Password</label>
+                    <input type="password" class="input" name="password" id="password" required>
+                </div>
+                <div class="inputfield">
+                    <label for="contact">Contact Number</label>
+                    <input type="text" class="input" name="contact" id="contact" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="register-button">Register</button>
+                </div>
+            </form>
+            <p>Already have an account? <a [routerLink]="['/patient-login']">Login now</a></p> 
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/lung.png" alt="Company Logo">
+                    <h1>Lung Cancer Risk Predictor</h1>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact Us</h2>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <p>Address: 123 Main Street, City, Country</p>
+                </div>
+                <div class="footer-social">
+                    <h2>Follow Us</h2>
+                    <a href="#"><img src="assets/images/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login - Admin</title>
+</head>
+<body class="login-page">
+    
+    <main>
+        <div class="login-form">
+            <h1>Admin Login</h1>
+            <form action="/login" method="POST">
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="input-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="login-button">Login</button>
+                </div>
+            </form>
+            <p>Don't have an account? <a [routerLink]="['/admin-register']">Sign up now</a></p> 
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/lung.png" alt="Company Logo">
+                    <h1>Lung Cancer Risk Predictor</h1>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact Us</h2>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <p>Address: 123 Main Street, City, Country</p>
+                </div>
+                <div class="footer-social">
+                    <h2>Follow Us</h2>
+                    <a href="#"><img src="assets/images/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+

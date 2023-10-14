@@ -1,0 +1,52 @@
+<body class="login-page">
+    
+    <main>
+        <div class="login-form">
+            <h1>Login to Lung Cancer Predictor</h1>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" formControlName="email">
+                    <div *ngIf="loginForm.get('email').hasError('required') && loginForm.get('email').touched">
+                     Email is required.
+                    </div>
+                </div>
+                <div class="input-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" formControlName="password">
+                    <div *ngIf="loginForm.get('password').hasError('required') && loginForm.get('password').touched">
+                     Password is required.
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="login-button">Login</button>
+                </div>
+            </form>
+            <p>Don't have an account? <a [routerLink]="['/patient-register']">Sign up now</a></p> 
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/lung.png" alt="Company Logo">
+                    <h1>Lung Cancer Risk Predictor</h1>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact Us</h2>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <p>Address: 123 Main Street, City, Country</p>
+                </div>
+                <div class="footer-social">
+                    <h2>Follow Us</h2>
+                    <a href="#"><img src="assets/images/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
